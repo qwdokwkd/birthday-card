@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https:/qwdokwkd.github.io/birthday-card",
+  "homepage": "https://qwdokwkd.github.io/birthday-card",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
