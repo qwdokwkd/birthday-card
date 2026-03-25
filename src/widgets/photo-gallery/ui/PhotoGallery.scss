@@ -1,0 +1,75 @@
+.photo-gallery {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 200px;
+
+  &__photos {
+    position: relative;
+
+    width: 400px;
+    height: 500px;
+
+    transform: translateY(-10%);
+  }
+
+  &__photo {
+    position: absolute;
+    transform-origin: bottom center;
+    transition: 0.3s;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+    &:nth-child(1) {
+      width: 260px;
+      top: 300px;
+      left: 60px;
+      transform: rotate(20deg) translateY(-20px);
+      z-index: 4;
+    }
+
+    &:nth-child(2) {
+      width: 160px;
+      top: 80px;
+      left: 100px;
+      transform: rotate(10deg) translateY(-10px);
+      z-index: 2;
+    }
+
+    &:nth-child(3) {
+      width: 160px;
+      top: 20px;
+      left: 120px;
+      transform: rotate(-20deg) translateY(-10px);
+    }
+
+    &:nth-child(4) {
+      width: 240px;
+      bottom: -10%;
+      transform: rotate(-20deg) translateY(-20px);
+      z-index: 3;
+    }
+
+    &:hover {
+      z-index: 10;
+      transform: scale(1.5) translateY(40px);
+    }
+  }
+
+  &__card {
+    z-index: 9;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+
+    &-content {
+      max-width: 400px;
+    }
+
+    &-text {
+      text-align: center;
+    }
+  }
+}

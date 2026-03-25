@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "Mulmaru";
+  src:
+    local("Mulmaru"),
+    url("@/shared/assets/fonts/Mulmaru.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  src:
+    local("Inter"),
+    url("@/shared/assets/fonts/Inter-V.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

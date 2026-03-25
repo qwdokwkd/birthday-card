@@ -1,0 +1,29 @@
+@use "@/shared/styles/colors.scss" as *;
+
+.button {
+  background-color: $darker-pink;
+  color: white;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  border: 0;
+  border-radius: 32px;
+
+  padding: 16px 24px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $tinted-pink;
+  }
+
+  &.secondary {
+    background-color: $pink;
+    color: $darker-pink;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $lighter-pink;
+    }
+  }
+}

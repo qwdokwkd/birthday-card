@@ -1,0 +1,17 @@
+@use "@/shared/styles/colors.scss" as *;
+
+.playlist {
+  &__card {
+    &-link {
+      color: $darker-pink;
+      text-decoration: none;
+    }
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+  }
+}

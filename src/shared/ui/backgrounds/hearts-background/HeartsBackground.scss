@@ -1,0 +1,12 @@
+.hearts-background {
+  position: fixed;
+  z-index: 0;
+  inset: 0;
+  pointer-events: none;
+
+  & img {
+    position: absolute;
+    max-width: 150px;
+    width: 20%;
+  }
+}
