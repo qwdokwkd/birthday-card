@@ -3,7 +3,9 @@ import { useCallback, useState } from "react";
 import { Card } from "@/shared/ui";
 
 import LetterJpg from "@/shared/assets/images/letter.jpg";
+import DrawingJpg from "@/shared/assets/images/drawing.jpg";
 import LetterGif from "@/shared/assets/images/letter.gif";
+import ArrowGif from "@/shared/assets/images/arrow.gif";
 
 import "./LetterText.scss";
 import { buildClassName } from "@/shared/lib";
@@ -36,6 +38,8 @@ const LetterText: React.FC = () => {
         })}
       >
         <img onClick={onImageClick} src={LetterJpg} />
+        <img src={DrawingJpg} />
+        <img src={ArrowGif} />
       </div>
     </div>
   );
